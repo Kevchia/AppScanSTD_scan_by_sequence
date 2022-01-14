@@ -6,3 +6,5 @@ This Powershell script run AppScan Standard scans against a list of web sites (U
 
 ![image](https://user-images.githubusercontent.com/69405400/149555808-75893e5e-9ef1-48cf-8321-c6386ecbfa04.png)
 
+
+![image](https://user-images.githubusercontent.com/69405400/149556423-135ce165-b636-4586-a594-71c2454aff12.png)
