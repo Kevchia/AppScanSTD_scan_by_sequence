@@ -8,4 +8,5 @@ After run the script, it will read each line in URLs.txt and start scanning for 
 ![image](https://user-images.githubusercontent.com/69405400/149555808-75893e5e-9ef1-48cf-8321-c6386ecbfa04.png)
 
 After finish each scan write in Log4J_Result_Analysis.txt the result.<br>
-![image](https://user-images.githubusercontent.com/69405400/149556423-135ce165-b636-4586-a594-71c2454aff12.png)
+![image](https://user-images.githubusercontent.com/69405400/149566662-ae7429cf-c82e-4352-b2bc-513a0a9b2109.png)
+
