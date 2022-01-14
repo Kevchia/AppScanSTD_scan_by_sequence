@@ -38,8 +38,8 @@ Get-Content .\URLs.txt | ForEach-Object {
 	$string2 = " Log4J (CVE-2021-44228) vulnerability." 
 	$string1+$log4jVuln+$string2 >> Log4J_Result_Analysis.txt
 	$string3 = "For more details check "
-	$string4 = ".xml in report folder."
-	$string3+$counter+$string4
+	$string4 = ".scan in scan folder."
+	$string3+$counter+$string4 >> Log4J_Result_Analysis.txt
 	echo "" >> Log4J_Result_Analysis.txt
 }
 
