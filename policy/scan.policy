@@ -1,0 +1,1269 @@
+﻿<TestPolicy Version="9.6.66">
+  <BaseTestPolicyFile>C:\Users\appscanadmin\Documents\AppScan\Application-Only.policy</BaseTestPolicyFile>
+  <Description>This policy includes all application level tests except invasive and port listener tests.</Description>
+  <DescriptionID>ApplicationOnly</DescriptionID>
+  <Update>
+    <Invasiveness>
+      <Invasive>False</Invasive>
+      <NonInvasive>True</NonInvasive>
+    </Invasiveness>
+    <App_Infra>
+      <Application>True</Application>
+      <Infrastructure>False</Infrastructure>
+      <ThirdParty>False</ThirdParty>
+    </App_Infra>
+    <Severity>
+      <Informational>True</Informational>
+      <Low>True</Low>
+      <Medium>True</Medium>
+      <High>True</High>
+    </Severity>
+    <NetListener>False</NetListener>
+    <Technology>
+      <BlackBox>True</BlackBox>
+      <GlassBox>False</GlassBox>
+      <WhiteBox>True</WhiteBox>
+      <Mobile>True</Mobile>
+    </Technology>
+    <AllowedThreatClassifications All="True" />
+  </Update>
+  <IssueType Name="ApplicationTestScriptDetected" Severity="Default" Active="True">
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected1" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected10" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected11" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected12" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected13" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected14" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected2" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected3" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected4" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected5" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected6" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected7" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected8" Active="True" />
+    <VariantType Name="ApplicationTestScriptDetected" AttackRuleName="ApplicationTestScriptDetected9" Active="True" />
+  </IssueType>
+  <IssueType Name="attAccountLockout" Severity="Default" Active="True">
+    <VariantType Name="attAccountLockout" AttackRuleName="manyFalseLoginAttempts" Active="True" />
+  </IssueType>
+  <IssueType Name="attAdnsBlindSSRF" Severity="Default" Active="True">
+    <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF" Active="True" />
+    <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF2" Active="True" />
+    <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF3" Active="True" />
+  </IssueType>
+  <IssueType Name="attAPIBrokenFunctionLevelAuthorization" Severity="Default" Active="True">
+    <VariantType Name="attAPIBrokenFunctionLevelAuthorization" AttackRuleName="attAPIBrokenFunctionLevelAuthorizationDELETE" Active="True" />
+  </IssueType>
+  <IssueType Name="attAPIImproperAssetsManagement" Severity="Default" Active="True">
+    <VariantType Name="attAPIImproperAssetsManagement" AttackRuleName="attAPIImproperAssetsManagement1" Active="True" />
+    <VariantType Name="attAPIImproperAssetsManagement" AttackRuleName="attAPIImproperAssetsManagement2" Active="True" />
+    <VariantType Name="attAPIImproperAssetsManagementDomain" AttackRuleName="attAPIImproperAssetsManagementDomain" Active="True" />
+  </IssueType>
+  <IssueType Name="attAPILackResourcesRateLimit" Severity="Default" Active="True">
+    <VariantType Name="attAPILackResourcesRateLimit" AttackRuleName="attAPILackResourcesRateLimit1" Active="True" />
+  </IssueType>
+  <IssueType Name="attAPIMassAssignment" Severity="Default" Active="True">
+    <VariantType Name="attAPIMassAssignment" AttackRuleName="attAPIMassAssignment1" Active="True" />
+  </IssueType>
+  <IssueType Name="attARCDownload" Severity="Default" Active="True">
+    <VariantType Name="attScriptarc" AttackRuleName="attScriptarc" Active="True" />
+    <VariantType Name="attScriptARCCAPS" AttackRuleName="attScriptARCCAPS" Active="True" />
+    <VariantType Name="attScriptExtarc" AttackRuleName="attScriptExtarc" Active="True" />
+    <VariantType Name="attScriptExtARCCAPS" AttackRuleName="attScriptExtARCCAPS" Active="True" />
+  </IssueType>
+  <IssueType Name="attBasicAuthInfoLeak" Severity="Default" Active="True">
+    <VariantType Name="attBasicAuthInfoLeak" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindLDAPInjection" Severity="Default" Active="True">
+    <VariantType Name="attBlindLDAPInjectionDoubleParentheses" AttackRuleName="attBlindLDAPInjectionDoubleParentheses" Active="True" />
+    <VariantType Name="attBlindLDAPInjectionParentheses" AttackRuleName="attBlindLDAPInjectionParentheses" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSqlInjectionADNSMSSQL" Severity="Default" Active="True">
+    <VariantType Name="attBlindSqlInjectionADNSMSSQL" AttackRuleName="attBlindSqlInjectionADNSMSSQL" Active="True" />
+    <VariantType Name="attBlindSqlInjectionADNSMSSQL" AttackRuleName="attBlindSqlInjectionADNSMSSQLNUMERIC" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSqlInjectionADNSMYSQL" Severity="Default" Active="True">
+    <VariantType Name="attBlindSqlInjectionADNSMYSQL" AttackRuleName="attBlindSqlInjectionADNSMYSQL" Active="True" />
+    <VariantType Name="attBlindSqlInjectionADNSMYSQL" AttackRuleName="attBlindSqlInjectionADNSMYSQLNUMERIC" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSqlInjectionADNSPOSTGRESQL" Severity="Default" Active="True">
+    <VariantType Name="attBlindSqlInjectionADNSPOSTGRESQL" AttackRuleName="attBlindSqlInjectionADNSPOSTGRESQL" Active="True" />
+    <VariantType Name="attBlindSqlInjectionADNSPOSTGRESQL" AttackRuleName="attBlindSqlInjectionADNSPOSTGRESQLNUMERIC" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSqlInjectionStrings" Severity="Default" Active="True">
+    <VariantType Name="attBlindSqlInjectionNoQuoteError" AttackRuleName="attBlindSqlInjectionNoQuoteError" Active="True" />
+    <VariantType Name="attBlindSqlInjectionNoQuoteErrorNoEnc" AttackRuleName="attBlindSqlInjectionNoQuoteErrorNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjectionOrderBy" AttackRuleName="attBlindSqlInjectionOrderBy" Active="True" />
+    <VariantType Name="attBlindSqlInjectionOrderByNoEnc" AttackRuleName="attBlindSqlInjectionOrderByNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjectionSplit" AttackRuleName="attBlindSqlInjectionSplit" Active="True" />
+    <VariantType Name="attBlindSqlInjectionSplitNoEnc" AttackRuleName="attBlindSqlInjectionSplitNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjectionSplitOracle" AttackRuleName="attBlindSqlInjectionSplitOracle" Active="True" />
+    <VariantType Name="attBlindSqlInjectionSplitOracleNoEnc" AttackRuleName="attBlindSqlInjectionSplitOracleNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjNoQuoteNoSpace" AttackRuleName="attBlindSqlInjectionNoQuoteNoSpace" Active="True" />
+    <VariantType Name="attBlindSqlInjNoQuoteNoSpaceNoEnc" AttackRuleName="attBlindSqlInjectionNoQuoteNoSpaceNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjNoSingleQuote" AttackRuleName="attBlindSqlInjectionNoSingleQuote" Active="True" />
+    <VariantType Name="attBlindSqlInjNoSingleQuoteNoEnc" AttackRuleName="attBlindSqlInjectionNoSingleQuoteNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjNumeric" AttackRuleName="attBlindSqlInjectionNumeric" Active="True" />
+    <VariantType Name="attBlindSqlInjNumericNoEnc" AttackRuleName="attBlindSqlInjectionNumericNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjStrings" AttackRuleName="attBlindSqlInjectionStrings" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsComment" AttackRuleName="attBlindSqlInjectionStringsComment" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsCommentNoEnc" AttackRuleName="attBlindSqlInjectionStringsCommentNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsNoEnc" AttackRuleName="attBlindSqlInjectionStringsNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsParenthComment" AttackRuleName="attBlindSqlInjectionStringsParenthComment" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsParenthCommentNoEnc" AttackRuleName="attBlindSqlInjectionStringsParenthCommentNoEnc" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsWithPercent" AttackRuleName="attBlindSqlInjectionStringsWithPercent" Active="True" />
+    <VariantType Name="attBlindSqlInjStringsWithPercentNoEnc" AttackRuleName="attBlindSqlInjectionStringsWithPercentNoEnc" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSSRFAdnsSensitiveHeaders" Severity="Default" Active="True">
+    <VariantType Name="attBlindSSRFAdnsSensitiveHeaders" AttackRuleName="attBlindSSRFAdnsSensitiveHeadersHost1" Active="True" />
+    <VariantType Name="attBlindSSRFAdnsSensitiveHeaders" AttackRuleName="attBlindSSRFAdnsSensitiveHeadersXForwardedHost1" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindSSRFTwsSensitiveHeaders" Severity="Default" Active="True">
+    <VariantType Name="attBlindSSRFTwsSensitiveHeaders" AttackRuleName="attPortListenerBlindSSRFDecimalHost" Active="True" />
+    <VariantType Name="attBlindSSRFTwsSensitiveHeaders" AttackRuleName="attPortListenerBlindSSRFDecimalXForwardedHost" Active="True" />
+  </IssueType>
+  <IssueType Name="attBlindXPathInjection" Severity="Default" Active="True">
+    <VariantType Name="attBlindXpathInjectionSingleQuote" AttackRuleName="attBlindXPathInjectionStringsQuote" Active="True" />
+  </IssueType>
+  <IssueType Name="attCachedLogin" Severity="Default" Active="True">
+    <VariantType Name="attCachedLogin" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attCachedSSL" Severity="Default" Active="True">
+    <VariantType Name="attCachedSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attCommandInjectionAdns" Severity="Default" Active="True">
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg1" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg10" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg11" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg12" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg13" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg2" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg3" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg4" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg5" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg6" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg7" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg8" Active="True" />
+    <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg9" Active="True" />
+  </IssueType>
+  <IssueType Name="attCommandInjectionUnixTws" Severity="Default" Active="True">
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutation" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationAmpersand" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationAmpersandUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationBackTick" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationBackTickUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDollar" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDollarUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleAmpersand" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleAmpersandUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoublePipe" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoublePipeUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleQuote" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleQuoteUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationInputRedirect" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationInputRedirectUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationOutputRedirect" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationOutputRedirectUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationPipe" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationPipeUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSemiColon" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSemiColonUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSingelQuote" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSingelQuoteUrlEncoded" Active="True" />
+    <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationUrlEncoded" Active="True" />
+  </IssueType>
+  <IssueType Name="attCommandInjectionWindowsTws" Severity="Default" Active="True">
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTws" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsAmpersand" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsDoubleQuote" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsInputRedirection" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsLogicalAnd" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsLogicalOr" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsOutputRedirection" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsPipe" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsRightParenthesis" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsSemiColon" Active="True" />
+    <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsSingleQuote" Active="True" />
+  </IssueType>
+  <IssueType Name="attConfluenceRemoteCommandExecutionCVE202126084" Severity="Default" Active="True">
+    <VariantType Name="attConfluenceRemoteCommandExecutionAdnsCVE202126084" AttackRuleName="attConfluenceRemoteCommandExecutionAdnsCVE202126084" Active="True" />
+  </IssueType>
+  <IssueType Name="attContentSecurityPolicy" Severity="Default" Active="True">
+    <VariantType Name="attContentSecurityPolicy" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attContentSecurityPolicyFrameAncestors" Severity="Default" Active="True">
+    <VariantType Name="attContentSecurityPolicyFrameAncestors" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attContentSecurityPolicyObjectSrc" Severity="Default" Active="True">
+    <VariantType Name="attContentSecurityPolicyObjectSrc" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attContentSecurityPolicyScriptSrc" Severity="Default" Active="True">
+    <VariantType Name="attContentSecurityPolicyScriptSrc" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attContentSecurityPolicyStyleSrc" Severity="Default" Active="True">
+    <VariantType Name="attContentSecurityPolicyStyleSrc" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attCrossSiteRequestForgery" Severity="Default" Active="True">
+    <VariantType Name="attCrossSiteRequestForgery" AttackRuleName="attCrossSiteRequestForgery" Active="True" />
+    <VariantType Name="attCrossSiteRequestForgeryLogin" AttackRuleName="sendOriginalNoSessionNoCSRFHeaders" Active="True" />
+    <VariantType Name="attCrossSiteRequestForgeryParam" AttackRuleName="attCrossSiteRequestForgeryParam" Active="True" />
+  </IssueType>
+  <IssueType Name="attCrossSiteScripting" Severity="Default" Active="True">
+    <VariantType Name="AsciiXSS" AttackRuleName="AsciiXSSPayload" Active="True" />
+    <VariantType Name="attAddParamXSS" AttackRuleName="addParam4XSS" Active="True" />
+    <VariantType Name="attAllParamXSS" AttackRuleName="setUserInputParamsXSS" Active="True" />
+    <VariantType Name="attAspDotNetXSS" AttackRuleName="attAspDotNetXSS" Active="True" />
+    <VariantType Name="attBadLoginXSS" AttackRuleName="attBadLoginXSS" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingBckSlash" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingBckSlashEnc" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingDblSlash" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingDblSlashEnc" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSlash" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSlashEnc" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSVG1" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSVG1Enc" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant1" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant10" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant11" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant2" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant3" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant4" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant5" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant6" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant7" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant8" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant9" Active="True" />
+    <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariantUnicodeEncoded1" Active="True" />
+    <VariantType Name="attCSS_short" AttackRuleName="paramCrossSiteScriptingVariant_short" Active="True" />
+    <VariantType Name="attCSSHtmlEntity" AttackRuleName="paramSetImgSrcCssHtmlEntity" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-1" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-2" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-3" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-4" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-5" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-6" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-7" Active="True" />
+    <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-8" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-1" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-2" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-3" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-4" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-5" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-6" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-7" Active="True" />
+    <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-8" Active="True" />
+    <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-1" Active="True" />
+    <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-2" Active="True" />
+    <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-3" Active="True" />
+    <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-4" Active="True" />
+    <VariantType Name="attCSSinJScontext6" AttackRuleName="paramCSSinJS6_1" Active="True" />
+    <VariantType Name="attCSSinJScontext6" AttackRuleName="paramCSSinJS6_2" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS7-1" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS7-2" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS8-1" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS8-2" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS9-1" Active="True" />
+    <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS9-2" Active="True" />
+    <VariantType Name="attCSSinJScontextReplace" AttackRuleName="paramCSSinJSReplace" Active="True" />
+    <VariantType Name="attCSSinJScontextReplace" AttackRuleName="paramCSSinJSReplaceEnc" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET1" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET1_d" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET2" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET3" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET4" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET4_null" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET5" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST1" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST2" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST3" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST4" Active="True" />
+    <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST5" Active="True" />
+    <VariantType Name="attCssInPathJS" AttackRuleName="attCssInPathJSdec" Active="True" />
+    <VariantType Name="attCssInPathJS" AttackRuleName="attCssInPathJSenc" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET11" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET11_d" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET22" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET33" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET33_1" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET44" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET44_null" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST11" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST22" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST33" Active="True" />
+    <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST44" Active="True" />
+    <VariantType Name="attCSSReferer" AttackRuleName="setHttpRefererToCSS1" Active="True" />
+    <VariantType Name="attCSSReferer" AttackRuleName="setHttpRefererToCSS2" Active="True" />
+    <VariantType Name="attCSSthroughComments" AttackRuleName="paramCSSoutOfComment" Active="True" />
+    <VariantType Name="attCSSwithStyle" AttackRuleName="paramCSSwithStyle" Active="True" />
+    <VariantType Name="attDirXSS_UTF7" AttackRuleName="dirAppendXSS_UTF7_1" Active="True" />
+    <VariantType Name="attDirXSS_UTF7" AttackRuleName="dirAppendXSS_UTF7_2" Active="True" />
+    <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSS" Active="True" />
+    <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSSenc" Active="True" />
+    <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSSraw" Active="True" />
+    <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgSrcCSS" Active="True" />
+    <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgSrcCSSenc" Active="True" />
+    <VariantType Name="attParamCssImgSrcLongUTF8woSemicolons" AttackRuleName="attParamCssImgSrcLongUTF8woSemicolons" Active="True" />
+    <VariantType Name="attParamTextAreaCSS" AttackRuleName="paramTextAreaCSS" Active="True" />
+    <VariantType Name="attParamXSS_UTF7" AttackRuleName="paramXSS_UTF7_1" Active="True" />
+    <VariantType Name="attParamXSS_UTF7" AttackRuleName="paramXSS_UTF7_2" Active="True" />
+    <VariantType Name="attPathCssImgSrc" AttackRuleName="pathSetImgSrcCSS1" Active="True" />
+    <VariantType Name="attPathCssImgSrc" AttackRuleName="pathSetImgSrcCSS2" Active="True" />
+    <VariantType Name="attSmartXSSAttr1" AttackRuleName="paramCSSinFrameSRC" Active="True" />
+    <VariantType Name="attSmartXSSAttr2" AttackRuleName="paramSmartXSSAttr2" Active="True" />
+    <VariantType Name="attSmartXSSAttr2" AttackRuleName="paramSmartXSSAttr2enc" Active="True" />
+    <VariantType Name="attSmartXSSAttr3" AttackRuleName="paramSmartXSSAttr3" Active="True" />
+    <VariantType Name="attSmartXSSAttr3" AttackRuleName="paramSmartXSSAttr3enc" Active="True" />
+    <VariantType Name="attSmartXSSAttr4" AttackRuleName="paramSmartXSSAttr4" Active="True" />
+    <VariantType Name="attSmartXSSAttr4" AttackRuleName="paramSmartXSSAttr4enc" Active="True" />
+    <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1" Active="True" />
+    <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1-" Active="True" />
+    <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1enc" Active="True" />
+    <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1-enc" Active="True" />
+    <VariantType Name="attSmartXSSJS2" AttackRuleName="paramSmartXSSJS2" Active="True" />
+    <VariantType Name="attSmartXSSJS2" AttackRuleName="paramSmartXSSJS2enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag11" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag12" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag12enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag13" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag13enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1doubleEnc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag2" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag2enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag3" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag4" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag51enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag5enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag6" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag8" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag8enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag91enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag9enc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagBckSlash" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagBckSlashEnc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagDblSlash" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagDblSlashEnc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSlash" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSlashEnc" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSVG1" Active="True" />
+    <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSVG1Enc" Active="True" />
+    <VariantType Name="attSmartXSSTag7" AttackRuleName="paramSmartXSSTag7" Active="True" />
+    <VariantType Name="attSmartXSSTag7" AttackRuleName="paramSmartXSSTag7enc" Active="True" />
+    <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag5" Active="True" />
+    <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag51" Active="True" />
+    <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag9" Active="True" />
+    <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag91" Active="True" />
+    <VariantType Name="attXssAnalyzer" AttackRuleName="analyzeXss" Active="True" />
+    <VariantType Name="attXssAnalyzerPath" AttackRuleName="analyzeXssOnPath" Active="True" />
+    <VariantType Name="attXssAnalyzerReferer" AttackRuleName="analyzeXssOnReferer" Active="True" />
+    <VariantType Name="attXSSinnerPath" AttackRuleName="XSSinnerPath" Active="True" />
+    <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNameGET1" Active="True" />
+    <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNameGET2" Active="True" />
+    <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNamePOST1" Active="True" />
+    <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNamePOST2" Active="True" />
+    <VariantType Name="attXSSScriptPostParamInGet" AttackRuleName="paramXSSScriptPostParamInGet" Active="True" />
+    <VariantType Name="attXSSScriptSrcAttr" AttackRuleName="paramXSSScriptSrcAttr" Active="True" />
+    <VariantType Name="MicrosoftASPNETXSS" AttackRuleName="MicrosoftASPNETXSS" Active="True" />
+    <VariantType Name="paramCSSinElementContext" AttackRuleName="paramCSSinFrameSRC" Active="True" />
+    <VariantType Name="paramCSSinJS10" AttackRuleName="paramCSSinJS10-1" Active="True" />
+    <VariantType Name="paramCSSinJS10" AttackRuleName="paramCSSinJS10-2" Active="True" />
+    <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext1" Active="True" />
+    <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext2" Active="True" />
+    <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext3" Active="True" />
+    <VariantType Name="XSSinXMLresponse" AttackRuleName="XSSinXML" Active="True" />
+  </IssueType>
+  <IssueType Name="attCSPInjection" Severity="Default" Active="True">
+    <VariantType Name="attCSPInjection" AttackRuleName="attCSPInjection" Active="True" />
+  </IssueType>
+  <IssueType Name="attCSRFinGraphQL" Severity="Default" Active="True">
+    <VariantType Name="attCSRFinGraphQL" AttackRuleName="attCSRFinGraphQL" Active="True" />
+  </IssueType>
+  <IssueType Name="attDebugFlag" Severity="Default" Active="True">
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter1" Active="True" />
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter2" Active="True" />
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter3" Active="True" />
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter4" Active="True" />
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter5" Active="True" />
+    <VariantType Name="attParamAddDebugFlag" AttackRuleName="addDebugParameter6" Active="True" />
+  </IssueType>
+  <IssueType Name="attDOTNETDownload" Severity="Default" Active="True">
+    <VariantType Name="attScriptcsproj" AttackRuleName="attScriptcsproj" Active="True" />
+    <VariantType Name="attScriptExtcsproj" AttackRuleName="attScriptExtcsproj" Active="True" />
+    <VariantType Name="attScriptExtvbproj" AttackRuleName="attScriptExtvbproj" Active="True" />
+    <VariantType Name="attScriptvbproj" AttackRuleName="attScriptvbproj" Active="True" />
+  </IssueType>
+  <IssueType Name="attDtdXXE" Severity="Default" Active="True">
+    <VariantType Name="attDtdBlindXXE" AttackRuleName="attBlindXXE" Active="True" />
+    <VariantType Name="attDtdBlindXXEADNS" AttackRuleName="attBlindXXEADNS" Active="True" />
+    <VariantType Name="attDtdBlindXXEParam" AttackRuleName="attBlindXXEParam" Active="True" />
+    <VariantType Name="attDtdBlindXXEParamADNS" AttackRuleName="attBlindXXEParamADNS" Active="True" />
+    <VariantType Name="attDtdXXEUnix" AttackRuleName="attXXEUnix" Active="True" />
+    <VariantType Name="attDtdXXEUnixParam" AttackRuleName="attXXEUnixParam" Active="True" />
+    <VariantType Name="attDtdXXEWin32" AttackRuleName="attXXEWin32-1" Active="True" />
+    <VariantType Name="attDtdXXEWin32" AttackRuleName="attXXEWin32-2" Active="True" />
+    <VariantType Name="attDtdXXEWin32Param" AttackRuleName="attXXEWin32-1Param" Active="True" />
+    <VariantType Name="attDtdXXEWin32Param" AttackRuleName="attXXEWin32-2Param" Active="True" />
+  </IssueType>
+  <IssueType Name="attDtdXXEJSON" Severity="Default" Active="True">
+    <VariantType Name="attDtdBlindXXEJSON" AttackRuleName="attBlindXXEJSON" Active="True" />
+    <VariantType Name="attDtdBlindXXEJSONADNS" AttackRuleName="attBlindXXEJSONADNS" Active="True" />
+    <VariantType Name="attDtdXXEJSONUnix" AttackRuleName="attXXEJSONUnix" Active="True" />
+    <VariantType Name="attDtdXXEJSONWin32" AttackRuleName="attXXEJSONWin32-1" Active="True" />
+    <VariantType Name="attDtdXXEJSONWin32" AttackRuleName="attXXEJSONWin32-2" Active="True" />
+  </IssueType>
+  <IssueType Name="attDumbBruteForce" Severity="Default" Active="True">
+    <VariantType Name="attDumbBruteForceadminadmin" AttackRuleName="attDumbBruteForceadminadmin" Active="True" />
+    <VariantType Name="attDumbBruteForceadminpassword" AttackRuleName="attDumbBruteForceadminpassword" Active="True" />
+    <VariantType Name="attDumbBruteForcedemodemo" AttackRuleName="attDumbBruteForcedemodemo" Active="True" />
+    <VariantType Name="attDumbBruteForceguestguest" AttackRuleName="attDumbBruteForceguestguest" Active="True" />
+    <VariantType Name="attDumbBruteForceSA" AttackRuleName="attDumbBruteForceSA" Active="True" />
+    <VariantType Name="attDumbBruteForcetesttest" AttackRuleName="attDumbBruteForcetesttest" Active="True" />
+    <VariantType Name="attDumbBruteForceusernamepassword" AttackRuleName="attDumbBruteForceusernamepassword" Active="True" />
+  </IssueType>
+  <IssueType Name="attEmailSpoofing" Severity="Default" Active="True">
+    <VariantType Name="attParamEmailSpoofing" AttackRuleName="paramSetEmail" Active="True" />
+  </IssueType>
+  <IssueType Name="attFileUnix" Severity="Default" Active="True">
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileEtcPasswdUnixSlashUnicoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileEtcPasswdUnixUnicoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnix_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixDotDoubleEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixSlashDoubleEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixSlashnDotlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixSlashUrlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixUnicode_null" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix_null" AttackRuleName="paramFileUnixUrlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileEtcPasswdUnixSlashUnicoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileEtcPasswdUnixUnicoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixDotDoubleEncoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixSlashDoubleEncoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixSlashnDotUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixSlashUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixUnicode" Active="True" />
+    <VariantType Name="attFileParamUnix" AttackRuleName="paramFileUnixUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamWebXmlLinux" AttackRuleName="paramFileWebXmlAbs" Active="True" />
+    <VariantType Name="attFileParamWebXmlLinux" AttackRuleName="paramFileWebXmlRelative" Active="True" />
+    <VariantType Name="attFileParamWebXmlLinux" AttackRuleName="paramFileWebXmlRelativeDoubleDot" Active="True" />
+    <VariantType Name="attFileTextPlainParamUnix" AttackRuleName="paramFileUnix" Active="True" />
+    <VariantType Name="attFileTextPlainParamUnix" AttackRuleName="paramFileUnixAbs" Active="True" />
+    <VariantType Name="attFileTextPlainParamUnix" AttackRuleName="paramFileUnixAbsFileUri" Active="True" />
+    <VariantType Name="attFileTextPlainParamUnix" AttackRuleName="paramFileUnixDoubleTravesal" Active="True" />
+    <VariantType Name="attPathTraversalFileCreateUnix" AttackRuleName="attPathTraversalFileCreateUnix" Active="True" />
+  </IssueType>
+  <IssueType Name="attFileUpload" Severity="Default" Active="True">
+    <VariantType Name="FileUpload" AttackRuleName="addFileContent" Active="True" />
+    <VariantType Name="GV_FileUpload" AttackRuleName="GV_doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="attFileUploadXXE" Severity="Default" Active="True">
+    <VariantType Name="FileUploadXXE" AttackRuleName="addFileContentXXE" Active="True" />
+  </IssueType>
+  <IssueType Name="attFileWin32" Severity="Default" Active="True">
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileBootIniBSlashandDotUrlEncode_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileBootIniBSlashUrlEncode_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileBootIniSlashnDotUrlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileBootIniSlashUrlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileBootIniUrlEncoded_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32BackSlashed_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32BootIniDotDoubleEncoding_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32BootIniDotSlashEncoding_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32BootIniDoubleEncoding_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32BootIniUnicode_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32BootiniUnicoded_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32BootiniUnicoded_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32BootIniUnicodeSlash_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32DoubleBackSlashed_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32Unicode_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32UnicodeWinIni_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32UnicodeWinIni_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIni_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIni_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIni_null-3" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniBackSlashed_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniBackSlashed_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniDoubleBackslashed_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniDoubleBackslashed_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDotDoubleEncoding-1_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDotDoubleEncoding-2_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDotSlashEncoding-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDotSlashEncoding-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDoubleEncoding-1_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WinIniIniDoubleEncoding-2_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniUnicode_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniUnicode_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WininiUnicoded_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WininiUnicoded_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WininiUnicoded_null-3" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramfileWin32WininiUnicoded_null-4" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniUnicodeSlash_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWin32WinIniUnicodeSlash_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniBSlashandDotUrlEncode_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniBSlashandDotUrlEncode_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniBSlashUrlEncode_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniBSlashUrlEncode_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniSlashnDotUrlEncoded_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniSlashnDotUrlEncoded_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniSlashUrlEncoded_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniSlashUrlEncoded_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniUrlEncoded_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramFileWinIniUrlEncoded_null-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramSetBootIniAbsPath_null" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramSetWinIniAbsPath_null-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32_null" AttackRuleName="paramSetWinIniAbsPath_null-2" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32BackSlashed" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32DoubleBackSlashed" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32WinIni-1" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32WinIni-2" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32WinIni-3" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32WinIniDoubleBackslashed-1" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWin32WinIniDoubleBackslashed-2" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWinIni-1" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramFileWinIni-2" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramSetBootIniAbsPath" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramSetWinIniAbsPath-1" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramSetWinIniAbsPath-2" Active="True" />
+    <VariantType Name="attFileParamTextPlainWin32" AttackRuleName="paramSetWinIniAbsPath-3" Active="True" />
+    <VariantType Name="attFileParamWebXmlWindows" AttackRuleName="paramFileWebXmlAbs" Active="True" />
+    <VariantType Name="attFileParamWebXmlWindows" AttackRuleName="paramFileWebXmlAbsWindows" Active="True" />
+    <VariantType Name="attFileParamWebXmlWindows" AttackRuleName="paramFileWebXmlRelative" Active="True" />
+    <VariantType Name="attFileParamWebXmlWindows" AttackRuleName="paramFileWebXmlRelativeDoubleDot" Active="True" />
+    <VariantType Name="attFileParamWebXmlWindows" AttackRuleName="paramFileWebXmlRelativeWindows" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileBootIniBSlashUrlEncode" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileBootIniSlashnDotUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileBootIniSlashUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileBootIniUrlEncoded" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32BootIniBSlashandDotUrlEncode" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32BootIniDotDoubleEncoding" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32BootIniDoubleEncoding" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32BootIniSlashDoubleEncoding" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32BootIniUnicode" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32BootiniUnicoded-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32BootiniUnicoded-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32Unicode" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32UnicodeWinIni-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32UnicodeWinIni-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniBSlashandDotUrlEncode-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniBSlashandDotUrlEncode-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniBSlashUrlEncode-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniBSlashUrlEncode-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniDotDoubleEncoding-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniDotDoubleEncoding-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniDoubleEncoding-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniDoubleEncoding-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniSlashDoubleEncoding-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniIniSlashDoubleEncoding-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniSlashUnicode" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniSlashUnicode-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniSlashUnicode-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniUnicode-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWin32WinIniUnicode-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniUnicoded-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniUnicoded-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniUnicoded-3" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramfileWin32WinIniUnicoded-4" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniSlashnDotUrlEncoded-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniSlashnDotUrlEncoded-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniSlashUrlEncoded-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniSlashUrlEncoded-2" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniUrlEncoded-1" Active="True" />
+    <VariantType Name="attFileParamWin32" AttackRuleName="paramFileWinIniUrlEncoded-2" Active="True" />
+  </IssueType>
+  <IssueType Name="attFormatStrings" Severity="Default" Active="True">
+    <VariantType Name="attFormatStringsAttack" AttackRuleName="paramSetFormatString" Active="True" />
+  </IssueType>
+  <IssueType Name="attHostHeaderInjection" Severity="Default" Active="True">
+    <VariantType Name="attHostHeaderInjection" AttackRuleName="attHostHeaderInjection" Active="True" />
+    <VariantType Name="attHostHeaderInjection" AttackRuleName="attHostHeaderInjectionXFwdHeader" Active="True" />
+  </IssueType>
+  <IssueType Name="attHttpResponseSplitting" Severity="Default" Active="True">
+    <VariantType Name="attFormsAuthHttpInjectionFromLogin" AttackRuleName="appendPathHttpInjectionLoggedOut" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionFromLogin" AttackRuleName="appendPathHttpInjectionLoggedOut1" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionFromLogin" AttackRuleName="setQueryHttpInjectionLoggedOut" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionFromLogin" AttackRuleName="setQueryHttpInjectionLoggedOut1" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionToLogin" AttackRuleName="appendPathHttpInjectionLoggedOut" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionToLogin" AttackRuleName="appendPathHttpInjectionLoggedOut1" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionToLogin" AttackRuleName="setQueryHttpInjectionLoggedOut" Active="True" />
+    <VariantType Name="attFormsAuthHttpInjectionToLogin" AttackRuleName="setQueryHttpInjectionLoggedOut1" Active="True" />
+    <VariantType Name="attPathHttpInjection" AttackRuleName="appendPathHttpInjection" Active="True" />
+    <VariantType Name="attPathHttpInjection" AttackRuleName="setQueryHttpInjection" Active="True" />
+    <VariantType Name="attResponseSplitting" AttackRuleName="attResponseSplit1" Active="True" />
+    <VariantType Name="attResponseSplitting" AttackRuleName="attResponseSplit2" Active="True" />
+  </IssueType>
+  <IssueType Name="attHttpsToHttp" Severity="Default" Active="True">
+    <VariantType Name="attHttpsToHttp" AttackRuleName="setHttpsToHttp" Active="True" />
+  </IssueType>
+  <IssueType Name="attINCDownload" Severity="Default" Active="True">
+    <VariantType Name="attScriptExtinc" AttackRuleName="attScriptExtinc" Active="True" />
+    <VariantType Name="attScriptExtINCCAPS" AttackRuleName="attScriptExtINCCAPS" Active="True" />
+    <VariantType Name="attScriptinc" AttackRuleName="attScriptinc" Active="True" />
+    <VariantType Name="attScriptINCCAPS" AttackRuleName="attScriptINCCAPS" Active="True" />
+  </IssueType>
+  <IssueType Name="attInsecureIndexing" Severity="Default" Active="True">
+    <VariantType Name="attInsecureIndexingAdsutilVbs" AttackRuleName="srchAdsutilVbs" Active="True" />
+    <VariantType Name="attInsecureIndexingDotHtaccess" AttackRuleName="srchDotHtaccess" Active="True" />
+    <VariantType Name="attInsecureIndexingGlobalAsax" AttackRuleName="srchGlobalAsax" Active="True" />
+    <VariantType Name="attInsecureIndexingHttpdConf" AttackRuleName="srchHttpdConf" Active="True" />
+    <VariantType Name="attInsecureIndexingJrunIni" AttackRuleName="srchJrunIni" Active="True" />
+    <VariantType Name="attInsecureIndexingMagnusConf" AttackRuleName="srchMagnusConf" Active="True" />
+    <VariantType Name="attInsecureIndexingObjConf" AttackRuleName="srchObjConf" Active="True" />
+    <VariantType Name="attInsecureIndexingWebConfig" AttackRuleName="srchWebConfig" Active="True" />
+    <VariantType Name="attInsecureIndexingWinIni" AttackRuleName="srchWinIni" Active="True" />
+  </IssueType>
+  <IssueType Name="attIntegerOverflow" Severity="Default" Active="True">
+    <VariantType Name="attParamNumOverflow" AttackRuleName="paramSetNumOverflowIntegerOverflow" Active="True" />
+    <VariantType Name="attParamNumOverflow" AttackRuleName="paramSetNumOverflowIntegerOverflow64" Active="True" />
+    <VariantType Name="attParamNumOverflow" AttackRuleName="paramSetNumOverflowNEG" Active="True" />
+    <VariantType Name="attParamNumOverflow" AttackRuleName="paramSetNumOverflowPOS" Active="True" />
+  </IssueType>
+  <IssueType Name="attJavaScriptHijacking" Severity="Default" Active="True">
+    <VariantType Name="attJavaScriptHijacking" AttackRuleName="attJavaScriptHijacking" Active="True" />
+  </IssueType>
+  <IssueType Name="attJSCookie" Severity="Default" Active="True">
+    <VariantType Name="attContentCookieInJS" AttackRuleName="addSuspiciousContents" Active="True" />
+    <VariantType Name="attContentCookieInJS" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attJSSQL" Severity="Default" Active="True">
+    <VariantType Name="attContentJSsql" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attJWTWeakSignature" Severity="Default" Active="True">
+    <VariantType Name="attJWTWeakSignature" AttackRuleName="attJWTWeakSignature" Active="True" />
+  </IssueType>
+  <IssueType Name="attLDAPInjection" Severity="Default" Active="True">
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection1" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection2" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection3" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection4" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection5" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection6" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection7" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection8" Active="True" />
+    <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection9" Active="True" />
+  </IssueType>
+  <IssueType Name="attLinkInjection" Severity="Default" Active="True">
+    <VariantType Name="attLinkInjection" AttackRuleName="attLinkInjection1" Active="True" />
+    <VariantType Name="attLinkInjection" AttackRuleName="attLinkInjection2" Active="True" />
+  </IssueType>
+  <IssueType Name="attLoginNotOverSSL" Severity="Default" Active="True">
+    <VariantType Name="attPrivacyLoginSSL" AttackRuleName="addSuspiciousContents" Active="True" />
+    <VariantType Name="attPrivacyPasswordSSL" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attMongoDB" Severity="Default" Active="True">
+    <VariantType Name="attMongoDB1" AttackRuleName="MongoDB_SQLiName" Active="True" />
+    <VariantType Name="attMongoDB2" AttackRuleName="MongoDB_SQLi1" Active="True" />
+    <VariantType Name="attMongoDB2" AttackRuleName="MongoDB_SQLi2" Active="True" />
+    <VariantType Name="attMongoDB2" AttackRuleName="MongoDB_SQLi3" Active="True" />
+    <VariantType Name="attMongoDB2" AttackRuleName="MongoDB_SQLi4" Active="True" />
+    <VariantType Name="attMongoDB3" AttackRuleName="MongoDB_SQLi_jsonParam1" Active="True" />
+    <VariantType Name="attMongoDB3" AttackRuleName="MongoDB_SQLi_jsonParam2" Active="True" />
+    <VariantType Name="attMongoDB4" AttackRuleName="MongoDB_SQLi_jsonBody1" Active="True" />
+    <VariantType Name="attMongoDB4" AttackRuleName="MongoDB_SQLi_jsonBody2" Active="True" />
+    <VariantType Name="attMongoDB5" AttackRuleName="MongoDB_BSQLi_Param2" Active="True" />
+    <VariantType Name="attMongoDB5" AttackRuleName="MongoDB_BSQLi_Param3" Active="True" />
+    <VariantType Name="attMongoDB5" AttackRuleName="MongoDB_BSQLi_Param4" Active="True" />
+    <VariantType Name="attMongoDB5" AttackRuleName="MongoDB_BSQLi_Param5" Active="True" />
+    <VariantType Name="attMongoDB51" AttackRuleName="MongoDB_BSQLi_Param1" Active="True" />
+    <VariantType Name="attMongoDB6" AttackRuleName="MongoDB_BSQLi_jsonParam" Active="True" />
+    <VariantType Name="attMongoDB7" AttackRuleName="MongoDB_BSQLi_jsonBody" Active="True" />
+  </IssueType>
+  <IssueType Name="attMSSQLInjection" Severity="Default" Active="True">
+    <VariantType Name="attCmdVolSQLInjection" AttackRuleName="paramSqlInjectionXpCmdShell" Active="True" />
+  </IssueType>
+  <IssueType Name="attNullByte" Severity="Default" Active="True">
+    <VariantType Name="attAspNullByteUnicoded" AttackRuleName="fileParamNullByteUnicoded1" Active="True" />
+    <VariantType Name="attAspNullByteUnicoded" AttackRuleName="fileParamNullByteUnicoded2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamBootIniSlashUnicodeNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamBSlashNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamBSlashWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamBSlashWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamDotDoubleEncodingNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamDotDoubleEncodingWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamDotDoubleEncodingWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashDoubleEncodingNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashDoubleEncodingWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashDoubleEncodingWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashnDotUrlEncodedNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashnDotUrlEncodedWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashnDotUrlEncodedWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashUrlEncodedNullByteWin32" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashUrlEncodedWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamSlashUrlEncodedWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-3" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-4" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-5" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-6" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32-7" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamTraversedNullByteWin32Unicode-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32BootIniBSlashandDotUrlEncode" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32DoubleBackSlashed" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWin32NullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWin32NullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32WinIniBSlashandDotUrlEncode-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32WinIniBSlashandDotUrlEncode-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32WinIniDoubleBackslashed-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileparamWin32WinIniDoubleBackslashed-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-10" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-11" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-12" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-13" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-14" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-2" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-3" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-4" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-5" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-6" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-7" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-8" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32-9" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32Unicode-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniNullByteWin32Unicode-8" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniSlashUnicodeNullByteWin32-1" Active="True" />
+    <VariantType Name="attFileParamNullByteWin32" AttackRuleName="fileParamWinIniSlashUnicodeNullByteWin32-2" Active="True" />
+  </IssueType>
+  <IssueType Name="attNullByteUnix" Severity="Default" Active="True">
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamDotDoubleEncodingNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamSlashDoubleEncodingNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamSlashnDotUrlEncodedNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamSlashUrlEncodedNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamTravdEtcPasswdSlashUnicodedNullByteUnix" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamTraversedNullByteUnix-1" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamTraversedNullByteUnix-2" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamTraversedNullByteUnix-3" Active="True" />
+    <VariantType Name="attFileParamNullByteUnix" AttackRuleName="fileParamTraversedNullByteUnixUnicode-1" Active="True" />
+  </IssueType>
+  <IssueType Name="attNXDOMAIN" Severity="Default" Active="True">
+    <VariantType Name="attNXDOMAIN" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="attParamEvalCommand" Severity="Default" Active="True">
+    <VariantType Name="attParamEvalCommand" AttackRuleName="paramEvalCommand" Active="True" />
+  </IssueType>
+  <IssueType Name="attParamOutOfRange" Severity="Default" Active="True">
+    <VariantType Name="attParamSelectOutOfRange" AttackRuleName="paramValueSetOutOfSelectionRangeAbove" Active="True" />
+    <VariantType Name="attParamSelectOutOfRange" AttackRuleName="paramValueSetOutOfSelectionRangeBelow" Active="True" />
+  </IssueType>
+  <IssueType Name="attParamSSI" Severity="Default" Active="True">
+    <VariantType Name="attParamSSIattackUnix" AttackRuleName="paramSSIUnix" Active="True" />
+    <VariantType Name="attParamSSIattackWin32" AttackRuleName="paramSSIWin32" Active="True" />
+  </IssueType>
+  <IssueType Name="attParamToggle" Severity="Default" Active="True">
+    <VariantType Name="attToggleParameterValue" AttackRuleName="paramToggleAll" Active="True" />
+  </IssueType>
+  <IssueType Name="attPermissiveTokens" Severity="Default" Active="True">
+    <VariantType Name="attSessionFixation1" AttackRuleName="sessionFixation11" Active="True" />
+  </IssueType>
+  <IssueType Name="attPortListenerBlindSSRF" Severity="Default" Active="True">
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRF" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotelessHex" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotlessDecimal" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotlessOcta" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFHex" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFMixedMode" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFOcta" Active="True" />
+    <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFOverflow" Active="True" />
+  </IssueType>
+  <IssueType Name="attPosPrivEscCookieManip" Severity="Default" Active="True">
+    <VariantType Name="attPosPrivEscCookieManipAdmin0" AttackRuleName="attPosPrivEscCookieManip1" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdmin1" AttackRuleName="attPosPrivEscCookieManip0" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdminF" AttackRuleName="attPosPrivEscCookieManipT" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdminFalse" AttackRuleName="attPosPrivEscCookieManipTrue" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdminN" AttackRuleName="attPosPrivEscCookieManipY" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdminNo" AttackRuleName="attPosPrivEscCookieManipYes" Active="True" />
+    <VariantType Name="attPosPrivEscCookieManipAdminOff" AttackRuleName="attPosPrivEscCookieManipOn" Active="True" />
+  </IssueType>
+  <IssueType Name="attPriceMutate1" Severity="Default" Active="True">
+    <VariantType Name="attEshoplifting" AttackRuleName="paramPriceTo123dot45" Active="True" />
+  </IssueType>
+  <IssueType Name="attRedirectInURL" Severity="Default" Active="True">
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURL" Active="True" />
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURL0" Active="True" />
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURL0_Basic" Active="True" />
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURL3" Active="True" />
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURL3Basic" Active="True" />
+    <VariantType Name="attRedirectInURL" AttackRuleName="setParamWatchfireURLBasic" Active="True" />
+  </IssueType>
+  <IssueType Name="attReferrerPolicyAlert" Severity="Default" Active="True">
+    <VariantType Name="attReferrerPolicyAlert" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attReferrerPolicyHeaderExist" Severity="Default" Active="True">
+    <VariantType Name="attReferrerPolicyHeaderExist" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attRespCookieNotHttpOnlySessionCookie" Severity="Default" Active="True">
+    <VariantType Name="attPrivacyNonHttpOnlySessionCookie" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attRespCookieNotSecureSSL" Severity="Default" Active="True">
+    <VariantType Name="attPrivacyNonSecureCookieSSL" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attRespCookieSessionNotRam" Severity="Default" Active="True">
+    <VariantType Name="attPrivacyNotRamSessionCookie" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attSameSiteCookie" Severity="Default" Active="True">
+    <VariantType Name="attSameSiteCookie" AttackRuleName="attSameSiteCookie" Active="True" />
+  </IssueType>
+  <IssueType Name="attSameSiteCookieUnrestrictive" Severity="Default" Active="True">
+    <VariantType Name="attSameSiteCookieUnrestrictive" AttackRuleName="attSameSiteCookieUnrestrictive" Active="True" />
+  </IssueType>
+  <IssueType Name="attScriptDownload" Severity="Default" Active="True">
+    <VariantType Name="att_file_append_backup_underline" AttackRuleName="file_append_backup_underline" Active="True" />
+    <VariantType Name="att_file_append_bak_underline" AttackRuleName="file_append_bak_underline" Active="True" />
+    <VariantType Name="att_file_append_old_underline" AttackRuleName="file_append_old_underline" Active="True" />
+    <VariantType Name="att_file_jsp_to_jspa" AttackRuleName="file_jsp_to_jspa" Active="True" />
+    <VariantType Name="att_file_jsp_to_jspf" AttackRuleName="file_jsp_to_jspf" Active="True" />
+    <VariantType Name="att_file_prepend_1" AttackRuleName="file_prepend_1" Active="True" />
+    <VariantType Name="att_file_prepend_2" AttackRuleName="file_prepend_2" Active="True" />
+    <VariantType Name="att_file_prepend_3" AttackRuleName="file_prepend_3" Active="True" />
+    <VariantType Name="att_file_prepend_underline_backup" AttackRuleName="file_prepend_underline_backup" Active="True" />
+    <VariantType Name="att_file_prepend_underline_bak" AttackRuleName="file_prepend_underline_bak" Active="True" />
+    <VariantType Name="att_file_prepend_underline_old" AttackRuleName="file_prepend_underline_old" Active="True" />
+    <VariantType Name="att_set_extension_1" AttackRuleName="set_extension_1" Active="True" />
+    <VariantType Name="att_set_extension_a" AttackRuleName="set_extension_a" Active="True" />
+    <VariantType Name="att_set_extension_inc" AttackRuleName="set_extension_inc" Active="True" />
+    <VariantType Name="att_set_extension_include" AttackRuleName="set_extension_include" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy1" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy10" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy11" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy2" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy3" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy4" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy5" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy6" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy7" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy8" Active="True" />
+    <VariantType Name="attCopyOfScript" AttackRuleName="pathScriptCopy9" Active="True" />
+    <VariantType Name="attPathAppend2" AttackRuleName="path_append_2" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExt7z" AttackRuleName="attPathAppend_7z" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtAr" AttackRuleName="attPathAppend_ar" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtBz2" AttackRuleName="attPathAppend_bz2" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtCbz" AttackRuleName="attPathAppend_cbz" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtExe" AttackRuleName="attPathAppend_exe" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtGz" AttackRuleName="attPathAppend_gz" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtJar" AttackRuleName="attPathAppend_jar" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtLzma" AttackRuleName="attPathAppend_lzma" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTar" AttackRuleName="attPathAppend_tar" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTar7z" AttackRuleName="attPathAppend_tar7z" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTarBz2" AttackRuleName="attPathAppend_tarbz2" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTarGz" AttackRuleName="attPathAppend_targz" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTarLzma" AttackRuleName="attPathAppend_tarlzma" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtTarXz" AttackRuleName="attPathAppend_tarxz" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtXz" AttackRuleName="attPathAppend_xz" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptExtZip" AttackRuleName="attPathAppend_zip" Active="True" />
+    <VariantType Name="attPathAppendArchivedScriptRar" AttackRuleName="attPathAppend_rar" Active="True" />
+    <VariantType Name="attPathAppendBak" AttackRuleName="path_append_bak" Active="True" />
+    <VariantType Name="attPathAppendDot1" AttackRuleName="path_append_dot_1" Active="True" />
+    <VariantType Name="attPathAppendDotA" AttackRuleName="path_append_dot_a" Active="True" />
+    <VariantType Name="attPathAppendInc" AttackRuleName="path_append_inc" Active="True" />
+    <VariantType Name="attPathAppendOld" AttackRuleName="path_append_old" Active="True" />
+    <VariantType Name="attPathAppendUnderlineBackup" AttackRuleName="path_append_underline_backup" Active="True" />
+    <VariantType Name="attPathAppendUnderlineBak" AttackRuleName="path_append_underline_bak" Active="True" />
+    <VariantType Name="attPathAppendUnderlineOld" AttackRuleName="path_append_underline_old" Active="True" />
+    <VariantType Name="attScript0" AttackRuleName="attScript0" Active="True" />
+    <VariantType Name="attScriptAppend1" AttackRuleName="pathAppend1" Active="True" />
+    <VariantType Name="attScriptbac" AttackRuleName="attScriptbac" Active="True" />
+    <VariantType Name="attScriptBACCAPS" AttackRuleName="attScriptBACCAPS" Active="True" />
+    <VariantType Name="attScriptbackup" AttackRuleName="attScriptbackup" Active="True" />
+    <VariantType Name="attScriptBACKUPCAPS" AttackRuleName="attScriptBACKUPCAPS" Active="True" />
+    <VariantType Name="attScriptBak" AttackRuleName="pathAppendBak" Active="True" />
+    <VariantType Name="attScriptBAKCAPS" AttackRuleName="attScriptBAKCAPS" Active="True" />
+    <VariantType Name="attScriptCsOld" AttackRuleName="pathAppendCsOld" Active="True" />
+    <VariantType Name="attScriptDashold" AttackRuleName="attScriptDashold" Active="True" />
+    <VariantType Name="attScriptDashOLDCAPS" AttackRuleName="attScriptDashOLDCAPS" Active="True" />
+    <VariantType Name="attScriptExt0" AttackRuleName="attScriptExt0" Active="True" />
+    <VariantType Name="attScriptExt3Dollar" AttackRuleName="pathSetExtension3Dollar" Active="True" />
+    <VariantType Name="attScriptExt7z" AttackRuleName="attScriptExt7z" Active="True" />
+    <VariantType Name="attScriptExtbac" AttackRuleName="attScriptExtbac" Active="True" />
+    <VariantType Name="attScriptExtBACCAPS" AttackRuleName="attScriptExtBACCAPS" Active="True" />
+    <VariantType Name="attScriptExtbackup" AttackRuleName="attScriptExtbackup" Active="True" />
+    <VariantType Name="attScriptExtBACKUPCAPS" AttackRuleName="attScriptExtBACKUPCAPS" Active="True" />
+    <VariantType Name="attScriptExtBak" AttackRuleName="pathSetExtensionBak" Active="True" />
+    <VariantType Name="attScriptExtBAKCAPS" AttackRuleName="attScriptExtBAKCAPS" Active="True" />
+    <VariantType Name="attScriptExtDashold" AttackRuleName="attScriptExtDashold" Active="True" />
+    <VariantType Name="attScriptExtDashOLDCAPS" AttackRuleName="attScriptExtDashOLDCAPS" Active="True" />
+    <VariantType Name="attScriptExtlst" AttackRuleName="attScriptExtlst" Active="True" />
+    <VariantType Name="attScriptExtOld" AttackRuleName="pathSetExtensionOld" Active="True" />
+    <VariantType Name="attScriptExtold2" AttackRuleName="attScriptExtold2" Active="True" />
+    <VariantType Name="attScriptExtOLDCAPS" AttackRuleName="attScriptExtOLDCAPS" Active="True" />
+    <VariantType Name="attScriptExtorig" AttackRuleName="attScriptExtorig" Active="True" />
+    <VariantType Name="attScriptExtORIGCAPS" AttackRuleName="attScriptExtORIGCAPS" Active="True" />
+    <VariantType Name="attScriptExtRar" AttackRuleName="attScriptExtRar" Active="True" />
+    <VariantType Name="attScriptExtSav" AttackRuleName="pathSetExtensionSav" Active="True" />
+    <VariantType Name="attScriptExtsave" AttackRuleName="attScriptExtsave" Active="True" />
+    <VariantType Name="attScriptExtTar" AttackRuleName="attScriptExtTar" Active="True" />
+    <VariantType Name="attScriptExtTarGz" AttackRuleName="attScriptExtTarGz" Active="True" />
+    <VariantType Name="attScriptExttemp" AttackRuleName="attScriptExttemp" Active="True" />
+    <VariantType Name="attScriptExtTilde1" AttackRuleName="attScriptExtTilde1" Active="True" />
+    <VariantType Name="attScriptExtTildebk" AttackRuleName="attScriptExtTildebk" Active="True" />
+    <VariantType Name="attScriptExtTmp" AttackRuleName="pathSetExtensionTmp" Active="True" />
+    <VariantType Name="attScriptExtTMPCAPS" AttackRuleName="attScriptExtTMPCAPS" Active="True" />
+    <VariantType Name="attScriptExtWim" AttackRuleName="attScriptExtWim" Active="True" />
+    <VariantType Name="attScriptExtZip" AttackRuleName="attScriptExtZip" Active="True" />
+    <VariantType Name="attScriptlst" AttackRuleName="attScriptlst" Active="True" />
+    <VariantType Name="attScriptOld" AttackRuleName="pathAppendOld" Active="True" />
+    <VariantType Name="attScriptold2" AttackRuleName="attScriptold2" Active="True" />
+    <VariantType Name="attScriptOLDCAPS" AttackRuleName="attScriptOLDCAPS" Active="True" />
+    <VariantType Name="attScriptorig" AttackRuleName="attScriptorig" Active="True" />
+    <VariantType Name="attScriptORIGCAPS" AttackRuleName="attScriptORIGCAPS" Active="True" />
+    <VariantType Name="attScriptresx" AttackRuleName="pathAppendResx" Active="True" />
+    <VariantType Name="attScriptSav" AttackRuleName="pathAppendSav" Active="True" />
+    <VariantType Name="attScriptsave" AttackRuleName="attScriptsave" Active="True" />
+    <VariantType Name="attScripttemp" AttackRuleName="attScripttemp" Active="True" />
+    <VariantType Name="attScriptTilde" AttackRuleName="pathAppendTilde" Active="True" />
+    <VariantType Name="attScriptTilde1" AttackRuleName="attScriptTilde1" Active="True" />
+    <VariantType Name="attScriptTildebk" AttackRuleName="attScriptTildebk" Active="True" />
+    <VariantType Name="attScriptTMPCAPS" AttackRuleName="attScriptTMPCAPS" Active="True" />
+  </IssueType>
+  <IssueType Name="attSensitiveInHtmlComments" Severity="Default" Active="True">
+    <VariantType Name="attSensitiveContentHtmlComment" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attServerSideTemplateInjection" Severity="Default" Active="True">
+    <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjection" Active="True" />
+    <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionAngleBraces" Active="True" />
+    <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionDoubleCurlyBraces" Active="True" />
+    <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionHashSingleBraces" Active="True" />
+  </IssueType>
+  <IssueType Name="attSessionValidAfterLogout" Severity="Default" Active="True">
+    <VariantType Name="attSessionValidAfterLogout" AttackRuleName="attSessionValidAfterLogout" Active="True" />
+  </IssueType>
+  <IssueType Name="attSqlInjectionChecks" Severity="Default" Active="True">
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpRefererToApostrophe" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpRefererToApostropheDoubleEncoded" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpRefererToApostropheEncoded" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpRefererToApostropheHtml" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpRefererToApostropheUnicode" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpXFowardedForToApostrophe" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpXFowardedForToApostropheDoubleEncoded" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpXFowardedForToApostropheEncoded" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpXFowardedForToApostropheHtml" Active="True" />
+    <VariantType Name="attHeaderSqlInjection" AttackRuleName="setHttpXFowardedForToApostropheUnicode" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection1" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection10" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection11" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection12" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection13" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection2" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection3" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection6" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection7" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjection9" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery1" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery2" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery3" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery4" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery5" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery6" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery7" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery8" Active="True" />
+    <VariantType Name="attSqlInjection1" AttackRuleName="paramSQLInjectionMySQLBreakQuery9" Active="True" />
+    <VariantType Name="attSqlInjection2" AttackRuleName="paramSQLInjectionVersion" Active="True" />
+    <VariantType Name="attSqlInjection3" AttackRuleName="paramSQLInjectionSysMsgs" Active="True" />
+    <VariantType Name="attSqlInjection4" AttackRuleName="paramSQLInjectionSysDBs" Active="True" />
+    <VariantType Name="attSqlInjection5" AttackRuleName="paramSQLInjectionOracleUsers" Active="True" />
+  </IssueType>
+  <IssueType Name="attUndefinedState" Severity="Default" Active="True">
+    <VariantType Name="att_file_jsp_to_jspx" AttackRuleName="file_jsp_to_jspx" Active="True" />
+    <VariantType Name="attNumericParamAppendXYZ" AttackRuleName="paramApppendXYZ" Active="True" />
+    <VariantType Name="attParamAppendArray" AttackRuleName="paramAppendArray1" Active="True" />
+    <VariantType Name="attParamAppendArray" AttackRuleName="paramAppendDOT" Active="True" />
+    <VariantType Name="attParamEmtpyValue" AttackRuleName="paramSetEmptyValue" Active="True" />
+    <VariantType Name="attParamRemove" AttackRuleName="removeParameter" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramEscapeQuery1" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramEscapeQuery2" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramEscapeQuery3" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramEscapeQuery4" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramEscapeQuery5" Active="True" />
+    <VariantType Name="attParamValHazardousChars" AttackRuleName="paramSetApostrophe" Active="True" />
+    <VariantType Name="attParamValueNull" AttackRuleName="paramSetNull" Active="True" />
+  </IssueType>
+  <IssueType Name="attUnnecessaryResponseHeaders" Severity="Default" Active="True">
+    <VariantType Name="attUnnecessaryResponseHeaders" AttackRuleName="attUnnecessaryResponseHeaders" Active="True" />
+  </IssueType>
+  <IssueType Name="attUserAgentXSS" Severity="Default" Active="True">
+    <VariantType Name="attUserAgentXSS" AttackRuleName="attUserAgentXSS" Active="True" />
+  </IssueType>
+  <IssueType Name="attVerbTampering" Severity="Default" Active="True">
+    <VariantType Name="attVerbTampering" AttackRuleName="mutVerbTampering" Active="True" />
+  </IssueType>
+  <IssueType Name="attViewStateNotEncrypted" Severity="Default" Active="True">
+    <VariantType Name="attCheckViewStateNotEncrypted" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="attWebProxy" Severity="Default" Active="True">
+    <VariantType Name="attWebProxy" AttackRuleName="attWebProxy" Active="True" />
+  </IssueType>
+  <IssueType Name="attXPathInjection" Severity="Default" Active="True">
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection1" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection2" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection3" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection4" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection5" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection6" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection7" Active="True" />
+    <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection8" Active="True" />
+  </IssueType>
+  <IssueType Name="authBypassSQLInjection" Severity="Default" Active="True">
+    <VariantType Name="authBypassSQLInjection" AttackRuleName="PasswordParamLoginPageSQLi1" Active="True" />
+    <VariantType Name="authBypassSQLInjection" AttackRuleName="PasswordParamLoginPageSQLi2" Active="True" />
+    <VariantType Name="authBypassSQLInjection1" AttackRuleName="UsernameParamLoginPageSQLi0" Active="True" />
+    <VariantType Name="authBypassSQLInjection1" AttackRuleName="UsernameParamLoginPageSQLi1" Active="True" />
+    <VariantType Name="authBypassSQLInjection1" AttackRuleName="UsernameParamLoginPageSQLi2" Active="True" />
+    <VariantType Name="authBypassSQLInjection1" AttackRuleName="UsernameParamLoginPageSQLi3" Active="True" />
+    <VariantType Name="authBypassSQLInjection1" AttackRuleName="UsernameParamLoginPageSQLi4" Active="True" />
+  </IssueType>
+  <IssueType Name="bodyParamsInQuery" Severity="Default" Active="True">
+    <VariantType Name="bodyParamsInQuery" AttackRuleName="bodyParamsInQuery" Active="True" />
+  </IssueType>
+  <IssueType Name="BREACH" Severity="Default" Active="True">
+    <VariantType Name="BREACH" AttackRuleName="BREACH" Active="True" />
+  </IssueType>
+  <IssueType Name="constTransient" Severity="Default" Active="True">
+    <VariantType Name="attSessionFixation2" AttackRuleName="removeNewCookiesFromFollowingReq" Active="True" />
+    <VariantType Name="constCookie" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="ContentTypeOptions" Severity="Default" Active="True">
+    <VariantType Name="attNoContentTypeOptionsHeaderExist" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="CORS" Severity="Default" Active="True">
+    <VariantType Name="CORS" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="CORSArbitraryOrigin" Severity="Default" Active="True">
+    <VariantType Name="CORSArbitraryOrigin" AttackRuleName="CORSArbitraryOrigin" Active="True" />
+  </IssueType>
+  <IssueType Name="CrossSiteRequestForgeryInOAuth" Severity="Default" Active="True">
+    <VariantType Name="CrossSiteRequestForgeryInOAuth" AttackRuleName="CrossSiteRequestForgeryInOAuth" Active="True" />
+  </IssueType>
+  <IssueType Name="DirectAccesstoAdministrationPages" Severity="Default" Active="True">
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages1" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages10" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages11" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages12" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages13" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages14" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages15" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages16" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages17" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages18" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages19" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages2" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages20" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages21" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages22" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages23" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages24" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages3" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages4" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages5" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages6" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages7" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages8" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages" AttackRuleName="DirectAccesstoAdministrationPages9" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages2" AttackRuleName="DirectAccesstoAdministrationPages25" Active="True" />
+    <VariantType Name="DirectAccesstoAdministrationPages2" AttackRuleName="DirectAccesstoAdministrationPages26" Active="True" />
+  </IssueType>
+  <IssueType Name="DOMXSS1" Severity="Default" Active="True">
+    <VariantType Name="attXssAnalyzerDomBased" AttackRuleName="analyzeXss" Active="True" />
+    <VariantType Name="attXssAnalyzerParameterDomBased" AttackRuleName="analyzeXss" Active="True" />
+    <VariantType Name="DOMBasedXSS_nonReflect" AttackRuleName="DOMXSSAppendFragment_nonReflect" Active="True" />
+    <VariantType Name="DOMBasedXSS_nonReflect" AttackRuleName="DOMXSSAppendFragment_nonReflect_enc" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_autocompleteInForm" Severity="Default" Active="True">
+    <VariantType Name="GD_autocompleteNotOff" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardAmericanExpress" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardAmericanExpress" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardAmericanExpressNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardAmericanExpressNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardDinersClub" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardDinersClub" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardDinersClubNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardDinersClubNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardDiscover" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardDiscover" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardDiscoverNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardDiscoverNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardMasterCard" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardMasterCard" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardMasterCardNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardMasterCardNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCards" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCards" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardsNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardsNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardVisa" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardVisa" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_CreditCardVisaNotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_CreditCardVisaNotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_DirListing" Severity="Default" Active="True">
+    <VariantType Name="GD_DirListing" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_EmailAddress" Severity="Default" Active="True">
+    <VariantType Name="GD_EmailAddress" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_InternalIP" Severity="Default" Active="True">
+    <VariantType Name="GD_InternalIP" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_PathDisclosure" Severity="Default" Active="True">
+    <VariantType Name="GD_PathDisclosure" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_SensitiveFiles" Severity="Default" Active="True">
+    <VariantType Name="GD_SensitiveFiles" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_SourceCodeDisclosure" Severity="Default" Active="True">
+    <VariantType Name="GD_SourceCodeDisclosure" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_SSN" Severity="Default" Active="True">
+    <VariantType Name="GD_SSN" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GD_SSN_NotSSL" Severity="Default" Active="True">
+    <VariantType Name="GD_SSN_NotSSL" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="GV_JSONXSS" Severity="Default" Active="True">
+    <VariantType Name="GV_JSONXSS" AttackRuleName="GV_doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="GV_SQLErr" Severity="Default" Active="True">
+    <VariantType Name="GV_SQLInjection" AttackRuleName="GV_doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="GV_StoredRespSplit" Severity="Default" Active="True">
+    <VariantType Name="GV_ResponseSplitting" AttackRuleName="GV_doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="GV_StoredXSS" Severity="Default" Active="True">
+    <VariantType Name="GV_XSS" AttackRuleName="GV_doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="GV_TargetBlankLink" Severity="Default" Active="True">
+    <VariantType Name="GV_TargetBlankLink" AttackRuleName="SetAllUserParamsToLink" Active="True" />
+  </IssueType>
+  <IssueType Name="HSTS" Severity="Default" Active="True">
+    <VariantType Name="HSTS" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="JSPFileInclusion" Severity="Default" Active="True">
+    <VariantType Name="JSPFileInclusion" AttackRuleName="paramFileUnix" Active="True" />
+  </IssueType>
+  <IssueType Name="LoginErrMsgPossibleBruteForce" Severity="Default" Active="True">
+    <VariantType Name="LoginErrMsgPossibleBruteForce" AttackRuleName="LoginErrMsgPossibleBruteForce" Active="True" />
+  </IssueType>
+  <IssueType Name="MHTMLXSS" Severity="Default" Active="True">
+    <VariantType Name="MHTMLXSS" AttackRuleName="MHTMLXSS" Active="True" />
+  </IssueType>
+  <IssueType Name="MxInjectionSMTP" Severity="Default" Active="True">
+    <VariantType Name="MxInjectionSMTP" AttackRuleName="MxInjectionSMTP" Active="True" />
+  </IssueType>
+  <IssueType Name="OAuthImplicitGrantType" Severity="Default" Active="True">
+    <VariantType Name="OAuthImplicitGrantType" AttackRuleName="OAuthImplicitGrantType" Active="True" />
+  </IssueType>
+  <IssueType Name="paramValueCheckInternalIP" Severity="Default" Active="True">
+    <VariantType Name="paramValueCheckInternalIP" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="paramValueCheckSSN" Severity="Default" Active="True">
+    <VariantType Name="paramValueCheckSSN" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="passParamGET" Severity="Default" Active="True">
+    <VariantType Name="passParamGET" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="PE_Test_nonAuth" Severity="Default" Active="True">
+    <VariantType Name="PE_Test_nonAuth" AttackRuleName="doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="PE_Test_Privileged" Severity="Default" Active="True">
+    <VariantType Name="PE_Test_privileged" AttackRuleName="doNothing" Active="True" />
+  </IssueType>
+  <IssueType Name="phishingInFrames" Severity="Default" Active="True">
+    <VariantType Name="attPhishingInFrames" AttackRuleName="frameToDemoTestFire" Active="True" />
+    <VariantType Name="attPhishingInFrames" AttackRuleName="iFrameToDemoTestFire" Active="True" />
+    <VariantType Name="attPhishingInFramesInXMLresponse" AttackRuleName="iFrameToDemoTestFireinXML" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled1" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled2" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled3" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled4" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled5" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled6" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled7" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled8" Active="True" />
+    <VariantType Name="attPhishingInFramesRemodeled" AttackRuleName="PhishingInFramesRemodeled9" Active="True" />
+  </IssueType>
+  <IssueType Name="PhishingThroughRFI" Severity="Default" Active="True">
+    <VariantType Name="PhishingThroughRFI2" AttackRuleName="XSSRemoteFileInclusionHTTPURI_local" Active="True" />
+    <VariantType Name="PhishingThroughRFI2" AttackRuleName="XSSRemoteFileInclusionHTTPURICaseSensitive_local" Active="True" />
+    <VariantType Name="PhishingThroughRFI2" AttackRuleName="XSSRemoteFileInclusionNoHTTPURI_local" Active="True" />
+  </IssueType>
+  <IssueType Name="PHPRemoteFileInclusion" Severity="Default" Active="True">
+    <VariantType Name="PHPRemoteFileInclusion" AttackRuleName="PHPRemoteFileInclusion1" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusion" AttackRuleName="PHPRemoteFileInclusion1_local" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusion" AttackRuleName="PHPRemoteFileInclusion2" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusion" AttackRuleName="PHPRemoteFileInclusion2_local" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusion" AttackRuleName="PHPRemoteFileInclusion3" Active="True" />
+  </IssueType>
+  <IssueType Name="PHPRemoteFileInclusionOnCookie" Severity="Default" Active="True">
+    <VariantType Name="PHPRemoteFileInclusionOnCookie" AttackRuleName="PHPRemoteFileInclusionOnCookie1" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusionOnCookie" AttackRuleName="PHPRemoteFileInclusionOnCookie1_local" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusionOnCookie" AttackRuleName="PHPRemoteFileInclusionOnCookie2" Active="True" />
+    <VariantType Name="PHPRemoteFileInclusionOnCookie" AttackRuleName="PHPRemoteFileInclusionOnCookie2_local" Active="True" />
+  </IssueType>
+  <IssueType Name="PotentialFileUpload" Severity="Default" Active="True">
+    <VariantType Name="PotentialFileUpload" AttackRuleName="addSuspiciousContents" Active="True" />
+  </IssueType>
+  <IssueType Name="PotentialOrderInformationFound" Severity="Default" Active="True">
+    <VariantType Name="PotentialOrderInformationFound" AttackRuleName="PotentialOrderInformationFound1" Active="True" />
+    <VariantType Name="PotentialOrderInformationFound" AttackRuleName="PotentialOrderInformationFound2" Active="True" />
+    <VariantType Name="PotentialOrderInformationFound" AttackRuleName="PotentialOrderInformationFound3" Active="True" />
+  </IssueType>
+  <IssueType Name="probePort8080" Severity="Default" Active="True">
+    <VariantType Name="probePort8080" AttackRuleName="changePortTo8080" Active="True" />
+  </IssueType>
+  <IssueType Name="probePort8880" Severity="Default" Active="True">
+    <VariantType Name="probePort8880" AttackRuleName="changePortTo8880" Active="True" />
+  </IssueType>
+  <IssueType Name="ReflectedTargetBlankLink" Severity="Default" Active="True">
+    <VariantType Name="ReflectedTargetBlankLink" AttackRuleName="SetAllUserParamsToLink" Active="True" />
+  </IssueType>
+  <IssueType Name="RSSMaliciousFileInclusion" Severity="Default" Active="True">
+    <VariantType Name="RSSMaliciousFileInclusion" AttackRuleName="RSSRemoteFileInclusion" Active="True" />
+  </IssueType>
+  <IssueType Name="RSSRemoteFileInclusion" Severity="Default" Active="True">
+    <VariantType Name="RSSRemoteFileInclusion" AttackRuleName="RSSRemoteFileInclusion" Active="True" />
+  </IssueType>
+  <IssueType Name="SessionFixation" Severity="Default" Active="True">
+    <VariantType Name="SessionFixation" AttackRuleName="SessionFixation3" Active="True" />
+    <VariantType Name="SessionFixation" AttackRuleName="SessionFixation4" Active="True" />
+  </IssueType>
+  <IssueType Name="SoapToHttp" Severity="Default" Active="True">
+    <VariantType Name="SoapToHttp" AttackRuleName="SoapToHttpGET" Active="True" />
+    <VariantType Name="SoapToHttp" AttackRuleName="SoapToHttpPOST" Active="True" />
+  </IssueType>
+  <IssueType Name="SriSupport" Severity="Default" Active="True">
+    <VariantType Name="SriSupport" AttackRuleName="SriExistCheck" Active="True" />
+  </IssueType>
+  <IssueType Name="SSJSDirListing" Severity="Default" Active="True">
+    <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing1" Active="True" />
+    <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing1_enc" Active="True" />
+    <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing2" Active="True" />
+    <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing2_enc" Active="True" />
+  </IssueType>
+  <IssueType Name="TargetBlankLink" Severity="Default" Active="True">
+    <VariantType Name="TargetBlankLink" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="XFS" Severity="Default" Active="True">
+    <VariantType Name="XFS" AttackRuleName="resendOriginalRequest" Active="True" />
+    <VariantType Name="XFS_Login" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="XSSProtectionHeader" Severity="Default" Active="True">
+    <VariantType Name="attNoXSSProtectionHeaderExist" AttackRuleName="resendOriginalRequest" Active="True" />
+  </IssueType>
+  <IssueType Name="XSSThroughRFI" Severity="Default" Active="True">
+    <VariantType Name="XSSThroughRFI2" AttackRuleName="XSSRemoteFileInclusionHTTPURI_local" Active="True" />
+    <VariantType Name="XSSThroughRFI2" AttackRuleName="XSSRemoteFileInclusionHTTPURICaseSensitive_local" Active="True" />
+    <VariantType Name="XSSThroughRFI2" AttackRuleName="XSSRemoteFileInclusionNoHTTPURI_local" Active="True" />
+  </IssueType>
+</TestPolicy>
